@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    <meta charset="utf-8">
+    <title>Kika-Style</title>
+    <!-- <base href="/"> -->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="/front_kika/css/fonts.css">
+    <link rel="stylesheet" href="/front_kika/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" defer></script>
+    <!-- <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdpL_4KVrL8yfhHiKTtqK2R6-ZyaBtrGE&callback=initMap"></script> -->
+    <script src="/front_kika/js/common.js" defer></script>
+</head>
+
+	<body>
+		<header class="header">
+	<div class="header__inner container">
+		<span class="header__mob-contacts"></span>
+		<!-- <span class="header__mob-contacts-close"><img src="/img/icons/close.svg" alt="close"></span> -->
+		<ul class="header__mob-contacts-items">
+				<li>
+					<span class="header__contacts-tel">+ 38 096 097 77 11</span>
+					<span class="header__contacts-tel">+ 38 096 097 77 22</span>
+					<span class="header__contacts-tel">+ 38 096 097 77 33</span>
+				</li>
+				<li class="mob-contacts-btn">
+					<a href="/front_kika/salons">Салоны на карте</span></a>
+				</li>
+				<li>
+					<a href="tel:+380674661201">Позвонить в салон<span>ул. Антоновича, 18</span></a>
+				</li>
+				<li>
+					<a href="tel:+380674661200">Позвонить в салон<span>бульвар Леси Украинки, 30б</span></a>
+				</li>
+				<li>
+					<a href="tel:+380674661106">Позвонить в салон<span>ул. Болсуновская, 2</span></a>
+				</li>
+				<li>
+					<a href="tel:+380679143535">Позвонить в салон<span>ул. Московская, 29А</span></a>
+				</li>
+				<li>
+					<a href="tel:+380962775555">Позвонить в салон<span>ул. Лютеранская, 21</span></a>
+				</li>
+				<li>
+					<a href="tel:+380962162222">Позвонить в салон<span>Столичное шоссе, 101</span></a>
+				</li>
+				<li class="mob-contacts-btn">
+					<a href="/blog/158-vakansii-v-novom-salone-krasoty">Наши вакансии</a>
+				</li>
+				<li>
+					<a href="mailto:info.kikastyle@gmail.com"><span>info.kikastyle@gmail.com</span></a>
+				</li>
+			</ul>
+		<div class="header__left">
+			<div class="header__left-btn"><span></span></div>
+			<figure class="header__logo">
+				<a href="/front_kika/"><img src="/img/icons/logo.svg" alt="kika-style-logo" /></a>
+			</figure>
+			<figure class="header__mob-logo">
+				<a href="/front_kika/"><img src="/img/icons/logo3.png" alt="kika-style-logo" /></a>
+			</figure>
+			<nav>
+				<ul>
+					<li><a href="/front_kika/services.html">Прайс-лист</a></li>
+					<li><a href="/front_kika/blog.html">Об услугах</a></li>
+					<li><a href="/front_kika/world.html">Мир Кiка</a></li>
+					<li><a href="/front_kika/photo.html">Фото</a></li>
+					<li><a href="/front_kika/video.html">Видео</a></li>
+					<li><a href="/front_kika/salons.html">Салоны</a></li>
+				</ul>
+				<ul class="mob__languages">
+						<li>
+							<a class="avantgarde" href="/ru">RU </i></a>
+						</li>
+						<li>
+							<a class="avantgarde" href="/ua">UA </a>
+						</li>
+						<li>
+							<a class="avantgarde" href="/en">EN </a>
+						</li>
+					</ul>
+			</nav>
+		</div>
+		<div class="header__right">
+			<div class="header__search">
+				<figure><img src="/img/icons/ico-search.svg" alt="search"></figure>
+				<form action="/search" method="get" id="search">
+					<div class="search-field">
+						<input name="search" id="search-inp" value="">
+					</div>
+				</form>
+			</div>
+			<a href="https://beauty-buy.com/" class="header__buy-link"><img src="/img/icons/buy-icons.svg" alt="our store"></a>
+			<div class="social__icons">
+    <ul>
+        <li style="display:none"><a href="#soc"><img src="/img/icons/twitter-black.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/facebook-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/instagram-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/youtube-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/pinterest.svg" alt=""></a></li>
+    </ul>
+</div>
+			<div class="header__lang">
+				<figure><img src="/img/icons/language.svg" alt="search"></facebook>
+				<ul class="ddown__languages">
+					<li>
+						<a class="avantgarde" href="/ru">RU </i></a>
+					</li>
+					<li>
+						<a class="avantgarde" href="/ua">UA </a>
+					</li>
+					<li>
+						<a class="avantgarde" href="/en">EN </a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__contacts-ddown">
+				<a href="#" class="header__contacts">Контакты<img src="/img/icons/arrow-down.svg" alt="arrow-down"></a>
+				<ul class="header__contacts-items">
+					<li>
+						<span class="header__contacts-tel">+ 38 096 097 77 11</span>
+						<span class="header__contacts-tel">+ 38 096 097 77 22</span>
+						<span class="header__contacts-tel">+ 38 096 097 77 33</span>
+					</li>
+					<li class="contacts-btn">
+						<a href="/front_kika/salons">Салоны красоты на карте</span></a>
+					</li>
+					<li>
+						<a href="tel:+380674661201">Cалон красоты<span>ул. Антоновича, 18</span></a>
+					</li>
+					<li>
+						<a href="tel:+380674661200">Cалон красоты<span>бульвар Леси Украинки, 30б</span></a>
+					</li>
+					<li>
+						<a href="tel:+380674661106">Cалон красоты<span>ул. Болсуновская, 2</span></a>
+					</li>
+					<li>
+						<a href="tel:+380679143535">Cалон красоты<span>ул. Московская, 29А</span></a>
+					</li>
+					<li>
+						<a href="tel:+380962775555">Cалон красоты<span>ул. Лютеранская, 21</span></a>
+					</li>
+					<li>
+						<a href="tel:+380962162222">Cалон красоты<span>Столичное шоссе, 101</span></a>
+					</li>
+					<li class="contacts-btn">
+						<a href="/blog/158-vakansii-v-novom-salone-krasoty">Наши вакансии</a>
+					</li>
+					<li class="contacts-btn">
+						<a href="mailto:info.kikastyle@gmail.com"><span>info.kikastyle@gmail.com</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header__mob-search container">
+		<form action="/search" method="get" id="mob-search">
+			<div class="mob-search-field">
+				<input name="search" id="search-inp" value="">
+			</div>
+		</form>
+	</div>
+</header>
+		<main class="main">
+			<section class="top">
+				<div class="top__inner container">
+					<figure class="top__bg">
+                        <img src="/img/best.png" alt="kika-salon"/>
+                        <h2 class="title-page title">об услугах узнать больше</h2>
+                    </figure>
+                </div>
+			</section>
+			<article class="article container">
+				<div class="content-section__iner article__descr">
+					<h2>ЯПОНСКИЙ ДЕНЬ В KIKA-STYLE</h2>
+			
+					<p>Традиционно в нашем салоне сенсей косметолог из Японии</p>
+			
+					<p>6 октября, воскресенье, запись ограничена</p>
+			
+					<p><img alt="" src="/img/JapanDay.jpg"></p>
+			
+					<p>Вы любите японскую косметику? Kika-style - семейный бизнес. Учредители сети салонов - граждане Украины и Японии.
+						Поэтому здесь ценят и поддерживают традиции японских уходов лица, тела и волос.</p>
+			
+					<p>- Ритуал Wamilies созданы для клиентов, которые любят дорогие косметические продукты и сложные поэтапные уходы.
+					</p>
+			
+					<p>Каждый ритуал включает диагностику, очищение кожи, уникальный японский массаж и уход по типу кожи / проблемы
+						кожи.</p>
+			
+					<p>Постоянные клиенты уже знакомы с ОДА НАОКО и ЙОКО НАДЗИ.</p>
+			
+					<p>В воскресенье 6-го октября в салоне Kika-style на<a
+							href="https://kika-style.com.ua/salons/1-ul-antonovicha-18-(byvshaya-gorkogo)"> ул. Антоновича, 18</a> принимает
+						госпожа НАРИТИ МИКИ САН.</p>
+			
+					<p>Не пропустите уникальную возможность отдохнуть, получить пользу и впечатления от общения с японским косметологом!
+					</p>
+			
+					<p>Чтобы выбрать время для записи, начиная с 9.00, звоните по тел.: +380674661201 +380960977711</p>
+			
+					<p>International bar show 27-29 сентября</p>
+			
+					<p><a href="https://kika-style.com.ua/world/Dni-lyubvi-v-Kika-stay">Пригласительный билет для клиентов салона
+							&gt;</a></p>
+			
+					<p><img alt=""
+							src="/img/lovesGift.jpg">
+					</p>
+			
+					<h2>ЯПОНСКОЕ МЕНЮ УХОДОВ</h2>
+			
+					<p>ВАМ ПРЕДЛОЖАТ ОДИН ИЗ&nbsp; РИТУАЛОВ</p>
+			
+					<h3>"Нормализация обновления"</h3>
+			
+					<p>Фирменная процедура эксфолиации Wamiles в ее самом коротком, но не менее эффективном виде.</p>
+			
+					<p>Очищение витаминно-минеральной эмульсией и специальным мылом, соответствующим типу кожи клиента, следует этап
+						эксфолиации, а затем финишный уход препаратами из той же линии.</p>
+			
+					<p>Длительность ритуала 72 минуты.</p>
+			
+					<h3>"Масляный уход"</h3>
+			
+					<p>Данный ритуал позволяет решить проблему обновления цикла кожи.</p>
+			
+					<p>Процедура рекомендована регулярно. Цель - борьба с черными точками и / или прыщами, пигментацией и морщинками.
+						Ритуал завершается питательной маской. Если проводить данный курс без этапа эксфолиации, то уход "Масляная маска"
+						можно проводить два раза в неделю.</p>
+			
+					<h3>Массаж «Шиацу»</h3>
+			
+					<p>Позволяет расслабиться и достичь максимального эффект от ухода.</p>
+			
+					<p>Длительность ритуала - 108 минут.</p>
+			
+					<h3>«Vital»</h3>
+			
+					<p>Ритуал помогает устранить проблемы, связанные с возрастными изменениями кожи.</p>
+			
+					<p>В ходе данного ритуала кожа до максимального предела напитывается не только необходимыми для ее нормальной
+						жизнедеятельности минералами, но и получает огромный заряд витаминов и аминокислот. Глубокое сбалансированное
+						питание в маске «Vital» позволяет освежить кожу, нормализовать все функции обновления и придать ей внутреннее
+						сияние. Этап «Эксфолиация» нормализует цикл обновления эпидермиса. Кожа становится здоровой, упругой, подтянутой.
+					</p>
+			
+					<p>Длительность ритуала - 83 минуты.</p>
+			
+					<h3>«Лифтинг Vital +»</h3>
+			
+					<p>Помогает устранить проблемы, связанные с возрастными изменениями кожи. Решает наиболее сложные и трудновыполнимые
+						косметические задачи, такие как дряблость кожи, глубокие морщины, выраженная пигментация, темные круги под
+						глазами, акне.</p>
+			
+					<p>Самый эффективный, полный и насыщенный минералами и аминокислотами ритуал с «Эксфолиацией». Ритуал сочетает в
+						себе преимущества как от «Масляного ухода», так и от Маски «Vital». Усиленный уход для зрелой и / или проблемной
+						кожи с уникальным массажем Wamiles действительно исцеляет кожу.</p>
+			
+					<p>Длительность ритуала - 119 минут.</p>
+			
+					<h3>«Восстановление»</h3>
+			
+					<p>Помогает укрепить ослабленную и чувствительную кожу. Процедура укрепления кожи и восстановления ее барьерных
+						функций. Для людей с выраженным акне, высокой чувствительностью кожи, покраснениями на лице в результате изменения
+						температуры воздуха.</p>
+			
+					<p>Можно проводить до 2-х раз в неделю. Рекомендуется для проведения на коже лица, защитные функции которой
+						настолько ослаблены, что не позволяют провести ритуал «Эксфолиация». Идеально подходит для тех, кто любит
+						загорать, так как данный курс восстанавливает и глубоко питает ослабленную ультрафиолетовыми лучами кожу,
+						позволяет достичь эффекта «Здорового загара».</p>
+			
+					<p>Длительность - 65 минут</p>
+			
+					<h3>«Кремовый уход»</h3>
+			
+					<p>Для уставшей кожи, склонной к сухости.</p>
+			
+					<p>Процедура кремового ухода по специальной технике Wamiles подходит для всех типов кожи, особенно рекомендуется для
+						кожи, склонной к сухости и быстрой потере влаги. Процедура позволяет минералам глубоко проникнуть в кожу и
+						максимально укрепить ее. Завершается использованием лосьона, который питает и защищает кожу от внешнего
+						воздействия окружающей среды и солнечных лучей. Результат - чистая кожа, очищенная от продуктов жизнедеятельности
+						клеток, токсинов и загрязнений.</p>
+			
+					<p>Длительность - 45 минут.</p>
+			
+					<h3>«Детокс»</h3>
+			
+					<p>Для кожи, страдающей загрязнением желез и закупоркой пор. Комплексное и глубокое очищение кожи как от видимых
+						загрязнений и проблем кожи (расширенные поры, темные круги под глазами, пигментация, жирный блеск), так и скрытых
+						(потеря упругости, черные точки, ослабление эластина).</p>
+			
+					<p>Ритуал сочетает в себе преимущества «Масляного Ухода», очищающего поры кожи и мощного детоксирующего воздействия
+						курса «Кремового Ухода».</p>
+			
+					<p>Массаж Шиацу позволяет получить еще большее удовольствие от ритуала.</p>
+			
+					<p>Длительность - 70 минут.</p>
+			
+					<h3>«Детокс + Эксфолиация»</h3>
+			
+					<p>Для наиболее эффективного очищения кожи от глубоких загрязнений и вывод токсинов. Ритуал глубокого оздоровления
+						кожи, нормализации обновления и деления клеток.</p>
+			
+					<p>Комплексное очищение кожи проводится сразу после эксфолиации, позволяя достичь максимально возможного результата.
+						Курс позволяет насытить редкими минералами и витаминами ослабленную внешними воздействиями и солнечными лучами
+						тусклую кожу. Выведение токсинов, избавление от купероза, морщин, тусклости.</p>
+			
+					<p>Длительность - 125 минут.</p>
+			
+					<h3>«Отбеливание»</h3>
+			
+					<p>Для кожи, склонной к образованию веснушек и пигментных пятен. Процедура отбеливания стимулирует восстановление
+						функций кожи, утраченных в результате воздействия ультрафиолетовых лучей и чрезмерного пересыхания.</p>
+			
+					<p>В ходе процедуры удаляется ороговевший слой кожи, нормализуется выработка меланина, восстанавливаются нарушенные
+						функции кожи. Кожа отбеливается, благодаря маске, нормализующей выработку коллагена, в состав которой входит
+						альфа-оксикислота и витаминный комплекс.</p>
+			
+					<p>Длительность – 95 мин.</p>
+			
+					<p>Tel: +380674661200 +380960977711 +380960977722</p>
+				</div>
+			</article>
+		</main>
+		<footer class="footer">
+	<div class="footer__inner container">
+		<div class="footer__top">
+			<nav>
+				<ul>
+					<li><a href="/front_kika/services">Прайс-лист</a></li>
+					<li><a href="/front_kika/blog">Об услугах</a></li>
+					<li><a href="/front_kika/world">Мир Кiка</a></li>
+					<li><a href="/front_kika/world/collections">Фото</a></li>
+					<li><a href="/front_kika/videos">Видео</a></li>
+					<li><a href="/front_kika/salons">Салоны</a></li>
+				</ul>
+			</nav>
+			<form action="/subscribe" method="get" id="subscribe">
+				<label for="subscribe-inp" class="subscribe-field">
+					Присоединитесь к нашей рассылке
+				</label>
+				<div>
+					<input name="subscribe" id="subscribe-inp" value="" placeholder="E-mail">
+				</div>
+			</form>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-copy">
+				<p>&copy; 2019 "Kika-Style"</p> <p>Салон красоты Kika-Style</p>
+			</div>
+			<div class="footer__bottom-logo">
+				<a href="/front_kika/"><img src="/img/icons/logo2.jpg" alt="kika-style-logo" /></a>
+			</div>
+			<div class="footer__bottom-soc">
+				Мы в социальных сетях:
+				<div class="social__icons">
+    <ul>
+        <li style="display:none"><a href="#soc"><img src="/img/icons/twitter-black.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/facebook-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/instagram-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/youtube-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/pinterest.svg" alt=""></a></li>
+    </ul>
+</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdpL_4KVrL8yfhHiKTtqK2R6-ZyaBtrGE&callback=initMap">
+</script>
+
+	</body>
+</html>

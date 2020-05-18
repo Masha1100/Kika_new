@@ -1,0 +1,861 @@
+.kikabook
+	&__title
+		font-size: 48px
+		text-transform: uppercase
+		text-align: center
+		line-height: 1.3
+		margin-top: 30px
+	&__subtitle
+		text-align: center
+		font-size: 24px
+	&__video
+		max-width: 1060px
+		height: 465px
+		margin: 20px auto
+		+sm(height, 300px)
+.photo
+	margin-top: 30px
+	&__title
+		font-size: 3em
+		text-transform: uppercase
+		text-align: center
+		line-height: 1.3
+		margin-top: 30px
+	&__collections
+		display: flex
+		flex-wrap: wrap
+		margin: 10px 0
+		+md-block()
+			flex-flow: column wrap
+	&__item
+		margin: 0.5%
+		height: 450px
+		flex-basis: 42%
+		+lg(height, 380px)
+		+md-block()
+			height: unset
+			width: 100%
+			flex-basis: auto
+		&:first-child
+			flex-basis: 56%
+			+md-block()
+				flex-basis: auto
+		&:last-child
+			flex-basis: 56%
+			+md-block()
+				flex-basis: auto
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			+md-block()
+				height: auto
+.insta
+	&__inner
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-gap: 20px
+		+sm(grid-template-columns, 1fr)
+	&__item
+		width: 100%
+		margin: auto
+		img
+			width: 100%
+			height: auto
+			object-fit: cover
+			max-height: 1000px
+	&__collections
+		display: flex
+		flex-flow: column wrap
+		align-items: center
+		justify-content: flex-start
+	&__title
+		font-size: 48px
+	&__subtitle
+		font-size: 24px
+		font-weight: bold
+		margin-bottom: 10px
+	&__instafeed
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-auto-rows: 32%
+		align-items: center
+		align-content: center
+.instafeed
+	&__item
+		width: 100%
+		height: 100%
+		a
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+.ph-slider
+	&__title
+		margin-top: 30px
+		font-size: 3em
+		text-align: center
+		margin-bottom: 5px
+	&__items
+		min-width: 300px
+		+sm-block()
+			padding-top: 50px
+			padding-bottom: 50px
+		&>.slick-arrow.slick-prev
+			top: -40px
+			left: 29%
+			border: 1px solid #f6f5f3
+			+xl(top, -44px)
+			+lg(left, 25%)
+			+md-block()
+				left: 20%
+				top: -40px
+			+sm-block()
+				left: calc(50% - 20px)
+				top: 0px
+				transform: rotate(90deg)
+		&>.slick-arrow.slick-next
+			top: -45px
+			right: 29%
+			border: 1px solid #f6f5f3
+			+lg(right, 25%)
+			+md-block()
+				right: 20%
+				top: -40px
+			+sm-block()
+				right: calc(50% - 20px)
+				transform: rotate(90deg)
+				top: auto
+				bottom: 0px
+		&>.slick-list
+			&>.slick-track
+				&>.slick-slide
+					div
+						&>.ph-slider__item
+							display: grid!important
+	&__item
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-gap: 20px
+		a
+			width: 100%
+			height: auto
+			position: relative
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				max-height: 900px
+			span
+				position: absolute
+				bottom: 10%
+				left: calc(50% - 20px)
+				font-size: 3em
+
+.kikavideo
+	margin-top: 30px
+	&__before-title
+		text-align: center
+		font-size: 1.5em
+	&__title
+		font-size: 3em
+		text-transform: uppercase
+		text-align: center
+		line-height: 1.3
+	&__subtitle
+		text-align: center
+		font-size: 24px
+		font-weight: bold
+	&__video
+		max-width: 1060px
+		height: 465px
+		margin: 20px auto
+		+sm(height, 300px)
+.video
+	margin-top: 30px
+	&__title
+		font-size: 3em
+		text-transform: uppercase
+		text-align: center
+		line-height: 1.3
+		margin-top: 30px
+	&__collections
+		display: flex
+		flex-wrap: wrap
+		margin: 10px 0
+		+md-block()
+			flex-flow: column wrap
+	&__item
+		margin: 0.5%
+		height: 450px
+		flex-basis: 56%
+		position: relative
+		+lg(height, 380px)
+		+md-block()
+			height: unset
+			width: 100%
+			flex-basis: auto
+		&:first-child
+			flex-basis: 42%
+			+md-block()
+				flex-basis: auto
+		&:last-child
+			flex-basis: 42%
+			+md-block()
+				flex-basis: auto
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			+md-block()
+				height: auto
+.playpause
+	width: 100%
+	height: 100%
+	position: absolute
+	cursor: pointer
+	left: 0%
+	top: 0%
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: rgba(0, 0, 0, 0.6)
+	span
+		font-size: 3em
+		color: #ffffff
+		max-width: 340px
+		display: inline-block
+		text-align: center
+		line-height: 1
+		text-transform: uppercase
+		font-weight: bold
+.vd-slider
+	&__title
+		margin-top: 30px
+		font-size: 3em
+		text-align: center
+		margin-bottom: 5px
+	&__items
+		min-width: 150px
+		+sm-block()
+			padding-top: 50px
+			padding-bottom: 50px
+		&>.slick-arrow.slick-prev
+			top: -40px
+			left: 29%
+			border: 1px solid #f6f5f3
+			+xl(top, -44px)
+			+lg(left, 25%)
+			+md-block()
+				left: 20%
+				top: -40px
+			+sm-block()
+				left: calc(50% - 20px)
+				top: 0px
+				transform: rotate(90deg)
+		&>.slick-arrow.slick-next
+			top: -45px
+			right: 29%
+			border: 1px solid #f6f5f3
+			+lg(right, 25%)
+			+md-block()
+				right: 20%
+				top: -40px
+			+sm-block()
+				right: calc(50% - 20px)
+				transform: rotate(90deg)
+				top: auto
+				bottom: 0px
+		&>.slick-list
+			&>.slick-track
+				&>.slick-slide
+					div
+						&>.vd-slider__item
+							display: grid!important
+	&__item
+		display: grid
+		grid-template-columns: 1fr
+		grid-gap: 20px
+		padding-right: 20px
+		a
+			width: 100%
+			height: auto
+			position: relative
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				max-height: 900px
+			span
+				position: absolute
+				bottom: 10%
+				left: calc(50% - 20px)
+				font-size: 3em
+.price
+	&__inner
+		display: grid
+		grid-template-columns: minmax(345px, 390px) 1fr 1fr
+		grid-auto-rows: 650px
+		border-bottom: 1px solid #f6f5f3
+		border-top: 1px solid #f6f5f3
+		+lg(grid-template-columns, minmax(325px, 390px) 1fr)
+		+md(grid-template-columns, 1fr 1fr)
+		+sm-block()
+			grid-template-columns: 1fr
+			margin-top: 30px
+			grid-auto-rows: auto
+	&__service
+		margin-left: 15px
+		padding-top: 15px
+		padding-bottom: 15px
+		max-width: 390px
+		min-width: 300px
+		display: block
+		overflow: scroll
+		+lg(margin-left, 0px)
+		+sm-block()
+			margin-left: unset
+			min-width: 100%
+		&-list
+			+sm(width, 100%)
+			li
+				padding: 1px
+				+sm-block()
+					padding: 3px
+					position: relative
+				&::after
+					+sm-block()
+						content: ""
+						width: 10px
+						height: 10px
+						position: absolute
+						top: 14px
+						right: 12px
+						border-left: 2px solid #333
+						border-top: 2px solid #333
+						transform: rotate(135deg)
+				a
+					font-size: 14px
+					color: var(--copy-color)
+					text-decoration: none
+					display: block
+					padding: 0 5px
+					+sm-block()
+						font-size: 14px
+						color: var(--copy-color)
+						padding: 4px 10px
+						background-color: #f6f5f3
+						display: block
+						text-transform: uppercase
+						font-weight: 500
+					&:hover
+						background-color: var(--gray-color)
+
+	&__slider
+		position: relative
+		width: 100%
+		min-width: 325px
+		background-color: #fafaf9
+		// padding-top: 50px
+		// padding-bottom: 50px
+		// +md(padding-top, 50px)
+		+xs(display, none)
+		&-items
+			position: relative
+			&>.slick-next.slick-arrow
+				transform: rotate(90deg)
+				top: calc(100% - 36px)
+				right: calc(50% - 20px)
+				+sm(top, calc(100% - 40px))
+			&>.slick-prev.slick-arrow
+				transform: rotate(90deg)
+				top: 0px
+				left: calc(50% - 20px)
+				// +md(top, -25px)
+			.slick-current
+				&>div
+					.price__slider-item
+						background-color: var(--btn-hover-bgcolor)
+		&-item
+			// height: 600px
+			cursor: pointer
+			display: flex!important
+			align-items: center
+			min-width: 350px
+			border-bottom: 1px solid var(--btn-hover-bgcolor)
+			padding: 15px 20px
+		&-img
+			width: 100px
+			height: 100px
+			min-width: 100px
+			position: relative
+			&::before
+				width: 90px
+				height: 90px
+				content: ''
+				position: absolute
+				border: 1px solid #ffffff
+				top: 5px
+				left: 5px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&-right
+			margin-left: 20px
+		&-title
+			font-size: 16px
+			text-transform: uppercase
+		&-desc
+			font-size: 14px
+	&__vacancy
+		min-width: 350px
+		+lg-block()
+			grid-column: 1/3
+		+sm(grid-column, auto)
+		&-items
+			min-width: 350px
+			position: relative
+			height: 100%
+			&>.slick-list
+				height: 100%
+				&>.slick-track
+					height: 100%
+					&>.slick-slide
+						height: 100%
+						&>div
+							height: 100%
+		&-item
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			display: flex!important
+			justify-content: center
+			align-items: flex-end
+			min-width: 350px
+			width: 100%
+			height: 100%
+		&-txt
+			padding: 15px
+			min-width: 300px
+			max-width: 90%
+			max-height: 300px
+			background-color: rgba(255, 255, 255, 0.9)
+			margin-bottom: 20px
+			h4
+				font-size: 24px
+				font-weight: bold
+			.arrow-left
+				display: flex
+				justify-content: flex-end
+				align-items: center
+				margin-right: 20px
+				transition: 0.3s transform
+				color: var(--copy-color)
+				&::before
+					content: ""
+					width: 55px
+					border-bottom: 1px
+					border-bottom-style: solid
+					border-bottom-color: inherit
+				&::after
+					content: ""
+					border-style: solid
+					margin-left: -16px
+					border-width: 0 1px 1px 0
+					display: inline-block
+					padding: 7px
+					transform: rotate(-45deg)
+.price-mob
+	&__slider
+		margin-bottom: 25px
+		position: relative
+		width: 100%
+		min-width: 325px
+		background-color: #fafaf9
+		padding-top: 50px
+		padding-bottom: 50px
+		display: none
+		+xs(display, block)
+		&-items
+			position: relative
+		&-item
+			a
+				cursor: pointer
+				display: flex!important
+				align-items: center
+				min-width: 350px
+				border-bottom: 1px solid var(--btn-hover-bgcolor)
+				padding: 15px 20px
+				text-decoration: none
+				&:hover
+					background-color: var(--btn-hover-bgcolor)
+		&-img
+			width: 100px
+			height: 100px
+			min-width: 100px
+			position: relative
+			&::before
+				width: 90px
+				height: 90px
+				content: ''
+				position: absolute
+				border: 1px solid #ffffff
+				top: 5px
+				left: 5px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&-right
+			margin-left: 20px
+		&-title
+			font-size: 16px
+			text-transform: uppercase
+		&-desc
+			font-size: 14px
+	&__btn
+		display: flex
+		margin: 0 auto
+		margin-top: 15px
+.price-desc
+	+sm(height, auto)
+.price-page
+	.btn
+		margin-top: 15px
+		+sm(display, none)
+//==============PRICE- Page2===========//
+.price-in
+	&__inner
+		display: grid
+		grid-template-columns: minmax(345px, 390px) minmax(345px, 450px) 1fr
+		grid-auto-rows: 650px
+		margin-top: 10px
+		border-bottom: 1px solid #f6f5f3
+		border-top: 1px solid #f6f5f3
+		+xxl(grid-template-columns, minmax(280px, 390px) 1fr 1fr)
+		+lg(grid-template-columns, 1fr 1fr 1fr)
+		// +md(grid-template-columns, 1fr 1fr)
+		+sm-block()
+			grid-template-columns: 1fr
+			margin-top: 30px
+			grid-auto-rows: auto
+			border-top: none
+		&.service-end
+			grid-template-columns: minmax(345px, 390px) 1fr 1fr
+			+xxl(grid-template-columns, minmax(280px, 390px) 1fr 1fr)
+			+lg(grid-template-columns, 1fr 1fr 1fr)
+			+md(grid-template-columns, 1fr 1fr)
+			+sm(grid-template-columns, 1fr)
+	&__service
+		margin-left: 15px
+		padding-top: 15px
+		padding-bottom: 15px
+		min-width: 280px
+		display: block
+		overflow: scroll
+		+lg-block()
+			margin-left: 0px
+			max-width: unset
+		+md(min-width, 200px)
+		+sm-block()
+			margin-left: unset
+			min-width: 100%
+			overflow: hidden
+			padding-top: 0
+			padding-bottom: 0
+		&-list
+			+sm-block()
+				width: 100%
+				display: none
+			&.active
+				+sm-block()
+					display: block
+					width: calc(100% - 30px)
+					position: absolute
+					z-index: 23
+					background: #ffffff
+			li
+				padding: 1px
+				+sm-block()
+					padding: 3px
+					position: relative
+				&::after
+					+sm-block()
+						content: ""
+						width: 10px
+						height: 10px
+						position: absolute
+						top: 14px
+						right: 12px
+						border-left: 2px solid #333
+						border-top: 2px solid #333
+						transform: rotate(135deg)
+				a
+					font-size: 14px
+					color: var(--copy-color)
+					text-decoration: none
+					display: block
+					padding: 0 5px
+					+sm-block()
+						font-size: 14px
+						color: var(--copy-color)
+						padding: 4px 10px
+						background-color: #f6f5f3
+						display: block
+						text-transform: uppercase
+						font-weight: 500
+					&:hover
+						background-color: var(--gray-color)
+	&__details
+		padding: 15px
+		max-width: 450px
+		min-width: 300px
+		display: block
+		overflow: scroll
+		background-color: #fafaf9
+		+xxl(max-width, unset)
+		+lg(margin-left, 0px)
+		+md(min-width, 250px)
+		+sm-block()
+			margin-left: unset
+			min-width: 100%
+			padding: 0
+			background-color: transparent
+		&-list
+			+sm(width, 100%)
+			li
+				padding: 1px
+				+sm-block()
+					padding: 3px
+					position: relative
+				&::after
+					+sm-block()
+						content: ""
+						width: 10px
+						height: 10px
+						position: absolute
+						top: 14px
+						right: 12px
+						border-left: 2px solid #333
+						border-top: 2px solid #333
+						transform: rotate(135deg)
+				a
+					font-size: 14px
+					color: var(--copy-color)
+					text-decoration: none
+					display: block
+					padding: 0 5px
+					+sm-block()
+						font-size: 14px
+						color: var(--copy-color)
+						padding: 4px 10px
+						background-color: #f6f5f3
+						display: block
+						text-transform: uppercase
+						font-weight: 500
+					&:hover
+						background-color: var(--gray-color)
+	&__more
+		background-color: var(--gray-color)
+		+md(overflow, auto)
+		+sm(display, none)
+		h1
+			font-size: 24px
+			text-transform: uppercase
+			text-align: center
+			margin-top: 40px
+			margin-bottom: 15px
+			+md-block()
+				margin-top: 20px
+				margin-bottom: 0
+	&-text
+		display: flex
+		+md(flex-flow, column)
+		&__block
+			flex-basis: 50%
+			padding-left: 20px
+			padding-bottom: 10px
+			h2
+				padding-top: 20px
+				font-size: 16px
+			&:first-child
+				padding-right: 20px
+				border-right: 2px solid #e8e7e5
+				text-align: right
+				+md-block()
+					border-right: none
+					text-align: initial
+		&__service
+			h3
+				font-size: 14px
+				font-weight: normal
+				padding-top: 10px
+			ul
+				li
+					font-size: 12px
+	&__lite-service
+		display: none
+		grid-template-columns: 1fr 1fr
+		border-bottom: 1px solid #f6f5f3
+		border-top: 1px solid #f6f5f3
+		text-align: center
+		align-items: center
+		+sm(display, grid)
+	&__current
+		padding: 5px
+		border-right: 1px solid #f6f5f3
+		text-align: left
+		text-transform: uppercase
+		font-weight: 500
+	&__ddown
+		padding: 5px
+		position: relative
+		opacity: 0.5
+		cursor: pointer
+		span
+			position: absolute
+			width: 10px
+			height: 10px
+			border-top: 1px solid #333333
+			border-right: 1px solid #333333
+			transform: rotate(135deg)
+			top: 10px
+			right: 25px
+	&__inner-info
+		padding: 15px
+		display: block
+		overflow: scroll
+		+xxl(max-width, unset)
+		+lg(margin-left, 0px)
+		+md(min-width, 250px)
+		+sm-block()
+			margin-left: unset
+			min-width: 100%
+			padding: 0
+			background-color: transparent
+	&__inner-details
+		+sm(width, 100%)
+		li
+			padding: 1px
+			+sm-block()
+				padding: 3px
+				position: relative
+			&::after
+				+sm-block()
+					content: ""
+					width: 10px
+					height: 10px
+					position: absolute
+					top: 14px
+					right: 12px
+					border-left: 2px solid #333
+					border-top: 2px solid #333
+					transform: rotate(135deg)
+			h3
+				font-size: 14px
+				text-decoration: none
+				padding: 5px
+			a
+				font-size: 14px
+				color: var(--copy-color)
+				text-decoration: none
+				display: block
+				padding: 0 5px
+				+sm-block()
+					font-size: 14px
+					color: var(--copy-color)
+					padding: 4px 10px
+					background-color: #f6f5f3
+					display: block
+					text-transform: uppercase
+					font-weight: 500
+				&:hover
+					background-color: var(--gray-color)
+	&__inner-details-info
+		font-size: 14px
+		color: var(--copy-color)
+		border-bottom: 2px solid #f6f5f3
+		padding: 10px 5px
+		h4
+			font-weight: 400
+		ul
+			max-width: 300px
+			font-size: 12px
+			li
+				&::after
+					content: none
+	&__slider
+		position: relative
+		width: 100%
+		min-width: 325px
+		background-color: #fafaf9
+		// padding-top: 50px
+		// padding-bottom: 50px
+		// +md(padding-top, 50px)
+		+md(display, none)
+		&-items
+			position: relative
+			&>.slick-next.slick-arrow
+				transform: rotate(90deg)
+				top: calc(100% - 36px)
+				right: calc(50% - 20px)
+				+sm(top, calc(100% - 40px))
+			&>.slick-prev.slick-arrow
+				transform: rotate(90deg)
+				top: 0px
+				left: calc(50% - 20px)
+				// +md(top, -25px)
+			.slick-current
+				&>div
+					.price__slider-item
+						background-color: var(--btn-hover-bgcolor)
+		&-item
+			// height: 600px
+			cursor: pointer
+			display: flex!important
+			align-items: center
+			min-width: 350px
+			border-bottom: 1px solid var(--btn-hover-bgcolor)
+			padding: 15px 20px
+		&-img
+			width: 100px
+			height: 100px
+			min-width: 100px
+			position: relative
+			&::before
+				width: 90px
+				height: 90px
+				content: ''
+				position: absolute
+				border: 1px solid #ffffff
+				top: 5px
+				left: 5px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&-right
+			margin-left: 20px
+		&-title
+			font-size: 16px
+			text-transform: uppercase
+		&-desc
+			font-size: 14px
+.service
+	display: none
+	+sm(display, block)
+	&__tags
+		margin-top: 30px
+		h2
+			text-align: center
+			text-transform: uppercase
+	&__tags-items
+		display: flex
+		flex-wrap: wrap
+		justify-content: stretch
+		a
+			text-decoration: none
+			padding: 10px
+			margin: 5px
+			border: 1px solid #f6f5f3

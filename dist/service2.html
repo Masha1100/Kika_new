@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    <meta charset="utf-8">
+    <title>Kika-Style</title>
+    <!-- <base href="/"> -->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="/front_kika/css/fonts.css">
+    <link rel="stylesheet" href="/front_kika/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" defer></script>
+    <!-- <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdpL_4KVrL8yfhHiKTtqK2R6-ZyaBtrGE&callback=initMap"></script> -->
+    <script src="/front_kika/js/common.js" defer></script>
+</head>
+
+	<body>
+		<header class="header">
+	<div class="header__inner container">
+		<span class="header__mob-contacts"></span>
+		<!-- <span class="header__mob-contacts-close"><img src="/img/icons/close.svg" alt="close"></span> -->
+		<ul class="header__mob-contacts-items">
+				<li>
+					<span class="header__contacts-tel">+ 38 096 097 77 11</span>
+					<span class="header__contacts-tel">+ 38 096 097 77 22</span>
+					<span class="header__contacts-tel">+ 38 096 097 77 33</span>
+				</li>
+				<li class="mob-contacts-btn">
+					<a href="/front_kika/salons">Салоны на карте</span></a>
+				</li>
+				<li>
+					<a href="tel:+380674661201">Позвонить в салон<span>ул. Антоновича, 18</span></a>
+				</li>
+				<li>
+					<a href="tel:+380674661200">Позвонить в салон<span>бульвар Леси Украинки, 30б</span></a>
+				</li>
+				<li>
+					<a href="tel:+380674661106">Позвонить в салон<span>ул. Болсуновская, 2</span></a>
+				</li>
+				<li>
+					<a href="tel:+380679143535">Позвонить в салон<span>ул. Московская, 29А</span></a>
+				</li>
+				<li>
+					<a href="tel:+380962775555">Позвонить в салон<span>ул. Лютеранская, 21</span></a>
+				</li>
+				<li>
+					<a href="tel:+380962162222">Позвонить в салон<span>Столичное шоссе, 101</span></a>
+				</li>
+				<li class="mob-contacts-btn">
+					<a href="/blog/158-vakansii-v-novom-salone-krasoty">Наши вакансии</a>
+				</li>
+				<li>
+					<a href="mailto:info.kikastyle@gmail.com"><span>info.kikastyle@gmail.com</span></a>
+				</li>
+			</ul>
+		<div class="header__left">
+			<div class="header__left-btn"><span></span></div>
+			<figure class="header__logo">
+				<a href="/front_kika/"><img src="/img/icons/logo.svg" alt="kika-style-logo" /></a>
+			</figure>
+			<figure class="header__mob-logo">
+				<a href="/front_kika/"><img src="/img/icons/logo3.png" alt="kika-style-logo" /></a>
+			</figure>
+			<nav>
+				<ul>
+					<li><a href="/front_kika/services.html">Прайс-лист</a></li>
+					<li><a href="/front_kika/blog.html">Об услугах</a></li>
+					<li><a href="/front_kika/world.html">Мир Кiка</a></li>
+					<li><a href="/front_kika/photo.html">Фото</a></li>
+					<li><a href="/front_kika/video.html">Видео</a></li>
+					<li><a href="/front_kika/salons.html">Салоны</a></li>
+				</ul>
+				<ul class="mob__languages">
+						<li>
+							<a class="avantgarde" href="/ru">RU </i></a>
+						</li>
+						<li>
+							<a class="avantgarde" href="/ua">UA </a>
+						</li>
+						<li>
+							<a class="avantgarde" href="/en">EN </a>
+						</li>
+					</ul>
+			</nav>
+		</div>
+		<div class="header__right">
+			<div class="header__search">
+				<figure><img src="/img/icons/ico-search.svg" alt="search"></figure>
+				<form action="/search" method="get" id="search">
+					<div class="search-field">
+						<input name="search" id="search-inp" value="">
+					</div>
+				</form>
+			</div>
+			<a href="https://beauty-buy.com/" class="header__buy-link"><img src="/img/icons/buy-icons.svg" alt="our store"></a>
+			<div class="social__icons">
+    <ul>
+        <li style="display:none"><a href="#soc"><img src="/img/icons/twitter-black.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/facebook-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/instagram-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/youtube-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/pinterest.svg" alt=""></a></li>
+    </ul>
+</div>
+			<div class="header__lang">
+				<figure><img src="/img/icons/language.svg" alt="search"></facebook>
+				<ul class="ddown__languages">
+					<li>
+						<a class="avantgarde" href="/ru">RU </i></a>
+					</li>
+					<li>
+						<a class="avantgarde" href="/ua">UA </a>
+					</li>
+					<li>
+						<a class="avantgarde" href="/en">EN </a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__contacts-ddown">
+				<a href="#" class="header__contacts">Контакты<img src="/img/icons/arrow-down.svg" alt="arrow-down"></a>
+				<ul class="header__contacts-items">
+					<li>
+						<span class="header__contacts-tel">+ 38 096 097 77 11</span>
+						<span class="header__contacts-tel">+ 38 096 097 77 22</span>
+						<span class="header__contacts-tel">+ 38 096 097 77 33</span>
+					</li>
+					<li class="contacts-btn">
+						<a href="/front_kika/salons">Салоны красоты на карте</span></a>
+					</li>
+					<li>
+						<a href="tel:+380674661201">Cалон красоты<span>ул. Антоновича, 18</span></a>
+					</li>
+					<li>
+						<a href="tel:+380674661200">Cалон красоты<span>бульвар Леси Украинки, 30б</span></a>
+					</li>
+					<li>
+						<a href="tel:+380674661106">Cалон красоты<span>ул. Болсуновская, 2</span></a>
+					</li>
+					<li>
+						<a href="tel:+380679143535">Cалон красоты<span>ул. Московская, 29А</span></a>
+					</li>
+					<li>
+						<a href="tel:+380962775555">Cалон красоты<span>ул. Лютеранская, 21</span></a>
+					</li>
+					<li>
+						<a href="tel:+380962162222">Cалон красоты<span>Столичное шоссе, 101</span></a>
+					</li>
+					<li class="contacts-btn">
+						<a href="/blog/158-vakansii-v-novom-salone-krasoty">Наши вакансии</a>
+					</li>
+					<li class="contacts-btn">
+						<a href="mailto:info.kikastyle@gmail.com"><span>info.kikastyle@gmail.com</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header__mob-search container">
+		<form action="/search" method="get" id="mob-search">
+			<div class="mob-search-field">
+				<input name="search" id="search-inp" value="">
+			</div>
+		</form>
+	</div>
+</header>
+		<main class="main">
+			<section class="price-in">
+				<div class="price-in__inner container">
+					<div class="price-in__service">
+						<div class="price-in__lite-service">
+							<div class="price-in__current">Стрижка</div>
+							<div class="price-in__ddown">Другие услуги<span></span></div>
+						</div>
+						<ul class="price-in__service-list">
+							<li>
+								<a href="/front_kika/service3.html">Стрижка</a>
+							</li>
+							<li>
+								<a href="#">Укладка волос</a>
+							</li>
+							<li>
+								<a href="#">Уходы и ритуалы</a>
+							</li>
+							<li>
+								<a href="#">Окрашивание волос</a>
+							</li>
+							<li>
+								<a href="#">Мелирование волос,окрашивание в блонд</a>
+							</li>
+							<li>
+								<a href="#">Защита волос при окрашивании</a>
+							</li>
+							<li>
+								<a href="#">Наращивание волос</a>
+							</li>
+							<li>
+								<a href="#">Био-завивка волос</a>
+							</li>
+							<li>
+								<a href="#">Маникюр, педикюр, гель </a>
+							</li>
+							<li>
+								<a href="#">Макияж</a>
+							</li>
+							<li>
+								<a href="#">Брови и ресницы</a>
+							</li>
+							<li>
+								<a href="#">Перманентный макияж, микропигментация</a>
+							</li>
+							<li>
+								<a href="#">Медицинское микропигментирование</a>
+							</li>
+							<li>
+								<a href="#">Удаление татуажа, татуировок</a>
+							</li>
+							<li>
+								<a href="#">Эпиляция</a>
+							</li>
+							<li>
+								<a href="#">Инъекции для тела</a>
+							</li>
+							<li>
+								<a href="#">Услуги мезотерапевта</a>
+							</li>
+							<li>
+								<a href="#">Услуги мезотерапевта</a>
+							</li>
+							<li>
+								<a href="#">Перманентный макияж, микропигментация</a>
+							</li>
+							<li>
+								<a href="#">Медицинское микропигментирование</a>
+							</li>
+							<li>
+								<a href="#">Удаление татуажа, татуировок</a>
+							</li>
+							<li>
+								<a href="#">Эпиляция</a>
+							</li>
+							<li>
+								<a href="#">Инъекции для тела</a>
+							</li>
+							<li>
+								<a href="#">Услуги мезотерапевта</a>
+							</li>
+							<li>
+								<a href="#">Услуги мезотерапевта</a>
+							</li>
+						</ul>
+                    </div>
+                    <div class="price-in__details">
+						<ul class="price-in__details-list">
+							<li>
+								<a href="/service3.html">Стрижка</a>
+							</li>
+							<li>
+								<a href="#">Укладка волос</a>
+							</li>
+							<li>
+								<a href="#">Уходы и ритуалы</a>
+							</li>
+							<li>
+								<a href="#">Окрашивание волос</a>
+							</li>
+							<li>
+								<a href="#">Мелирование волос,окрашивание в блонд</a>
+							</li>
+							<li>
+								<a href="#">Защита волос при окрашивании</a>
+							</li>
+							<li>
+								<a href="#">Наращивание волос</a>
+							</li>
+							<li>
+								<a href="#">Био-завивка волос</a>
+							</li>
+						</ul>
+					</div>
+					<div class="price-in__more">
+						<h1>Стрижка</h1>
+						<div class="price-in-text">
+							<div class="price-in-text__block">
+								<h2>СТРИЖКА ЖЕНСКАЯ </h2>
+								<div class="price-in-text__service">
+									<h3>С УКЛАДКОЙ</h3>
+									<ul>
+										<li>стилист 1200 / sassoon way 1450 <b></b></li>
+										<li>эксперт 1500 / sassoon way 1800 <b></b></li>
+										<li>арт-директор 2000 / sassoon way 2400 <b></b></li>
+										<li>креативный директор 2500 / sassoon way 3000 <b></b></li>
+									</ul>
+								</div>
+								<div class="price-in-text__service">
+									<h3>СТРИЖКА ЧЕЛКИ без мытья</h3>
+									<ul>
+										<li>стилист 500</li>
+										<li>эксперт 550</li>
+										<li>арт-директор li00</li>
+										<li>креативный диliектор 750</li>
+									</ul>
+								</div>
+							</div>
+							<div class="price-in-text__block">
+								<h2>СТРИЖКА МУЖСКАЯ </h2>
+								<div class="price-in-text__service">
+									<h3>С УКЛАДКОЙ</h3>
+									<ul>
+										<li>стилист 800-1000 / sassoon way 1000 <b></b></li>
+										<li>эксперт 1200 / sassoon Way 1400 <b></b></li>
+										<li>арт-директор 1500 / sassoon Way 2000 <b></b></li>
+										<li>креативный директор 2500 / sassoon way 3000 <b></b></li>
+									</ul>
+								</div>
+								<h2>СТРИЖКА ДЕТСКАЯ</h2>
+								<div class="price-in-text__service">
+									<h3></h3>
+									<ul>
+										<li>Стрижка длины без слоев <b>-50% взрослой стрижки</b></li>
+										<li>Модельная стрижка / Для мальчика <b>-20% взрослой стрижки</b></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="salons-about">
+				<div class="salons-about__inner container">
+					<div class="top__about price-page">
+						<h1 class="top__title title">Услуги в салоне красоты</h1>
+						<div class="top__descr price-desc">
+							<p>
+								Услуги салона красоты в Киеве можно получить в любой части города. Логично, что вас заинтересует ближайший адрес. Если салон находится рядом со мною, это будет иметь решающее значение. Предположим, вы нашли несколько салонов красоты поблизости. Как сделать выбор?
+							</p>
+							<p>
+								Услуги салона красоты в Киеве можно получить в любой части города. Логично, что вас заинтересует ближайший адрес. Если салон находится рядом со мною, это будет иметь решающее значение. Предположим, вы нашли несколько салонов красоты поблизости. Как сделать выбор?
+							</p>
+							<p>
+								Услуги салона красоты в Киеве можно получить в любой части города. Логично, что вас заинтересует ближайший адрес. Если салон находится рядом со мною, это будет иметь решающее значение. Предположим, вы нашли несколько салонов красоты поблизости. Как сделать выбор?
+							</p>
+						</div>
+						<a href="#" class="btn btn--black btn_ddown">Об услугах</a>
+					</div>
+				</div>
+			</section>
+			<section class="service-price">
+				<div class="service-price__inner container">
+					<figure class="top__bg">
+						<img src="/img/best.png" alt="kika-salon"/>
+					</figure>
+					<div class="top__about">
+						<h1 class="top__title title">Салоны красоты Kika-style</h1>
+						<div class="top__descr">
+							<p>
+								Бренд учрежден в 1998 году > Партнер Balmain hair couture, Forlle'd, Is Clinical, других премиум брендов. Имидж гостей салона создает группа талантливых людей. Их главное преимущество - свобода выбирать лучшие продукты, учебные программы, элитные технологии.
+							</p>
+							<p>
+								Бренд учрежден в 1998 году > Партнер Balmain hair couture, Forlle'd, Is Clinical, других премиум брендов. Имидж гостей салона создает группа талантливых людей. Их главное преимущество - свобода выбирать лучшие продукты, учебные программы, элитные технологии.
+							</p>
+							<p>
+								Бренд учрежден в 1998 году > Партнер Balmain hair couture, Forlle'd, Is Clinical, других премиум брендов. Имидж гостей салона создает группа талантливых людей. Их главное преимущество - свобода выбирать лучшие продукты, учебные программы, элитные технологии.
+							</p>
+							<p>
+								Бренд учрежден в 1998 году > Партнер Balmain hair couture, Forlle'd, Is Clinical, других премиум брендов. Имидж гостей салона создает группа талантливых людей. Их главное преимущество - свобода выбирать лучшие продукты, учебные программы, элитные технологии.
+							</p>
+						</div>
+						<a href="" class="btn btn--black btn_ddown">Читать больше</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__inner container">
+		<div class="footer__top">
+			<nav>
+				<ul>
+					<li><a href="/front_kika/services">Прайс-лист</a></li>
+					<li><a href="/front_kika/blog">Об услугах</a></li>
+					<li><a href="/front_kika/world">Мир Кiка</a></li>
+					<li><a href="/front_kika/world/collections">Фото</a></li>
+					<li><a href="/front_kika/videos">Видео</a></li>
+					<li><a href="/front_kika/salons">Салоны</a></li>
+				</ul>
+			</nav>
+			<form action="/subscribe" method="get" id="subscribe">
+				<label for="subscribe-inp" class="subscribe-field">
+					Присоединитесь к нашей рассылке
+				</label>
+				<div>
+					<input name="subscribe" id="subscribe-inp" value="" placeholder="E-mail">
+				</div>
+			</form>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-copy">
+				<p>&copy; 2019 "Kika-Style"</p> <p>Салон красоты Kika-Style</p>
+			</div>
+			<div class="footer__bottom-logo">
+				<a href="/front_kika/"><img src="/img/icons/logo2.jpg" alt="kika-style-logo" /></a>
+			</div>
+			<div class="footer__bottom-soc">
+				Мы в социальных сетях:
+				<div class="social__icons">
+    <ul>
+        <li style="display:none"><a href="#soc"><img src="/img/icons/twitter-black.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/facebook-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/instagram-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/youtube-logo.svg" alt=""></a></li>
+        <li><a href="#soc"><img src="/img/icons/pinterest.svg" alt=""></a></li>
+    </ul>
+</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdpL_4KVrL8yfhHiKTtqK2R6-ZyaBtrGE&callback=initMap">
+</script>
+
+	</body>
+</html>

@@ -1,0 +1,433 @@
+/*==============================================================
+						HEADER START
+/*============================================================= */
+.header
+	height: 65px
+	position: fixed
+	top: 0
+	background: #ffffff
+	width: 100%
+	z-index: 10
+	+lg(height, 70px)
+	&__inner
+		display: grid
+		grid-template-columns: 2fr 1.5fr
+		grid-gap: 20px
+		background-color: #fff
+		+lg-block()
+			height: 100%
+			grid-template-columns: 1fr
+			grid-gap: unset
+		&.container
+			+lg-block()
+				padding-left: 0
+				padding-right: 0
+
+	&__left
+		display: flex
+		align-items: center
+		+lg-block()
+			flex-flow: column
+			width: 100%
+			justify-content: center
+			position: relative
+		&-btn
+			display: none
+			position: absolute
+			top: 22px
+			width: 18px
+			height: 20px
+			left: 15px
+			+lg(display, block)
+			span 
+				width: 100%
+				height: 9px
+				border-bottom: 2px solid #000
+				display: block
+				transition: all 0.2s ease
+				&::before
+					content: ""
+					display: block
+					width: 100%
+					border-top: 2px solid #000
+					height: 6px
+				&::after
+					content: ""
+					display: block
+					width: 100%
+					border-bottom: 2px solid #000
+					height: 10px
+			&.active
+				span
+					margin-top: 8px
+					height: 1px
+					transform: rotate(139deg)
+					&::after
+						height: 1px
+						transform: rotate(80deg)
+					&::before
+						display: none
+			&.slide
+				display: none
+		nav
+			flex-grow: 1
+			+lg-block()
+				display: none
+				width: 100%
+				background-color: #fff
+				border-top: 1px solid var(--btn-hover-bgcolor)
+				border-bottom: 1px solid var(--btn-hover-bgcolor)
+				align-items: center
+				overflow-y: auto
+				max-height: calc(100vh - 90px)
+			&.active
+				+lg(display, block)
+			&>.mob__languages
+				display: none
+				flex-flow: row
+				justify-content: center
+				+lg(display, flex)
+			ul
+				display: flex
+				justify-content: space-around
+				+lg-block()
+					flex-flow: column wrap
+					// width: 100%
+					align-items: center
+					padding: 0 40px
+				// &:not(.mob__languages)
+				// 	li::after
+				// 		+lg-block()
+				// 			content: ""
+				// 			width: 8px
+				// 			height: 8px
+				// 			position: absolute
+				// 			border-bottom: 1px solid #000
+				// 			border-right: 1px solid #000
+				// 			transform: rotate(-45deg)
+				// 			top: calc(50% - 4px)
+				// 			right: 15px
+				// 			cursor: pointer
+				li
+					+lg-block()
+						// width: 100%
+						// border-bottom: 1px solid var(--btn-hover-bgcolor)
+						position: relative
+					a
+						display: block
+						padding: 5px
+						line-height: 60px
+						font-size: 12px
+						font-weight: 500
+						color: var(--main-color)
+						text-transform: uppercase
+						text-decoration: none
+						+lg-block()
+							font-size: 18px
+							line-height: 1.5
+							padding: 15px
+						&:after
+							content: ""
+							display: block
+							height: 3px
+							width: 100%
+					&:hover
+						a:after
+							background-color: var(--orange-color)
+	&__logo
+		flex-basis: 20%
+		margin-bottom: 10px
+		+xxl-block()
+			flex-basis: 25%
+			max-width: 130px
+		+lg-block()
+			margin-bottom: 0px
+			flex-basis: unset
+			min-width: 200px
+			min-height: 70px
+			display: flex
+			align-items: center
+		a
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: contain
+			text-decoration: none
+			img
+				width: 100%
+				max-width: 200px
+				height: 15px
+		&.slide
+			display: none
+	&__mob-logo
+		display: none
+		&.slide
+			display: block
+	&__right
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		+lg-block()
+			display: none
+			justify-content: center
+			background: #ffffff
+			box-shadow: 0 3px 4px var(--btn-hover-bgcolor)
+		&.active
+			display: flex
+	&__contacts
+		display: block
+		padding: 7px
+		font-weight: 500
+		font-size: 12px
+		color: var(--main-color)
+		text-transform: uppercase
+		text-decoration: none
+		img
+			width: 12px
+			height: 12px
+			display: inline-block
+			vertical-align: text-bottom
+			margin-left: 5px
+	&__lang
+		margin-right: 10px
+		position: relative
+		+lg(display, none)
+		figure
+			width: 30px
+			height: 30px
+			margin: 5px
+			display: inline-flex
+			align-items: center
+			justify-content: center
+			cursor: pointer
+		&:hover
+			.ddown__languages
+				display: block
+	&__buy-link
+		width: 30px
+		height: 30px
+		margin: 5px
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		+lg(display, none)
+	&__search
+		margin-right: 15px
+		display: flex
+		+lg(display, none)
+		img
+			padding: 5px
+			cursor: pointer
+		&.active
+			#search
+				width: 130px
+	&__contacts-ddown
+		position: relative
+	&__contacts
+		+lg(display, none)
+	&__mob-contacts
+		display: none
+		background-image: url('/img/icons/header-call.svg')
+		background-repeat: no-repeat
+		background-position: center
+		position: absolute
+		width: 20px
+		height: 20px
+		right: 20px
+		top: 26px
+		cursor: pointer
+		z-index: 15
+		+lg(display, block)
+		&.active
+			display: none
+		&.slide
+			background-image: url('/img/icons/close.svg')
+	&__contacts-items
+		position: absolute
+		right: -15px
+		top: 53px
+		opacity: 0
+		height: 0
+		width: 240px
+		z-index: 1
+		overflow-y: auto
+		background-color: #fff
+		transition: all 0.2s ease-in
+		li:first-child
+			margin-top: 10px
+			display: flex
+			flex-flow: column wrap
+			align-items: center
+			justify-content: center
+			span
+				display: block
+				font-size: 12px
+				line-height: 1.3
+			&:hover
+				background-color: var(--btn-hover-bgcolor)
+		li
+			text-align: center
+			overflow: hidden
+			height: 0
+			transition: height 0.2s ease-in
+			font-size: 16px
+			line-height: 1.3
+			font-weight: 500
+			margin-bottom: 10px
+			margin-left: 10px
+			margin-right: 10px
+			background-color: #f8f8f8
+			a
+				padding: 5px 10px
+				display: flex
+				flex-flow: row wrap
+				align-items: center
+				justify-content: center
+				height: 100%
+				color: var(--main-color)
+				text-decoration: none
+				span
+					display: block
+					font-size: 13px
+					line-height: 1.3
+					font-weight: 400
+				&:hover
+					background-color: var(--btn-hover-bgcolor)
+		.contacts-btn 
+			background: var(--main-color)
+			a
+				color: #ffffff
+				line-height: 1.3
+				text-decoration: none
+			&:hover
+				background: #fff
+				border: 1px solid var(--main-color)
+				a
+					color: var(--main-color)
+					background: #fff
+
+		&.active-el
+			height: auto
+			opacity: 1
+			max-height: calc(100vh - 60px)
+			li:first-child
+				height: 60px
+			li
+				height: 50px
+	&__mob-contacts-items
+		position: absolute
+		right: 0
+		top: 70px
+		height: 0
+		width: 100%
+		z-index: 1
+		opacity: 0
+		background-color: #ffffff
+		transition: all 0.2s ease
+		overflow-y: auto
+		max-height: calc(100vh - 65px)
+		li:first-child
+			margin-top: 10px
+			display: flex
+			flex-flow: column wrap
+			align-items: center
+			justify-content: center
+			span
+				display: block
+				font-size: 18px
+				line-height: 1.3
+			&:hover
+				background-color: var(--btn-hover-bgcolor)
+		li
+			text-align: center
+			overflow: hidden
+			height: 0
+			transition: height 0.2s ease-in
+			font-size: 12px
+			line-height: 1.3
+			font-weight: 500
+			margin-bottom: 10px
+			margin-left: 10px
+			margin-right: 10px
+			background-color: var(--gray-color)
+			a
+				padding: 0 10px
+				display: flex
+				flex-flow: column wrap
+				align-items: center
+				justify-content: center
+				height: 100%
+				color: var(--main-color)
+				text-decoration: none
+				span
+					display: block
+					font-size: 12px
+					line-height: 1.3
+					font-weight: 400
+				&:hover
+					background-color: var(--btn-hover-bgcolor)
+		.mob-contacts-btn 
+			background: var(--main-color)
+			a
+				color: #ffffff
+				line-height: 1.3
+				text-transform: uppercase
+				text-decoration: none
+			&:hover
+				background: #fff
+				border: 1px solid var(--main-color)
+				a
+					color: var(--main-color)
+					background: #fff
+					text-decoration: none
+		&.slide
+			height: auto
+			opacity: 1
+			li:first-child
+				height: 80px
+			li
+				height: 50px
+	&__mob-search
+		background: #ffffff
+		display: none
+		+lg(display, block)
+#mob-search
+	width: 100%
+	height: 50px
+	&>.mob-search-field
+		input
+			background-color: var(--gray-color)
+			padding: 15px
+			font-size: 14px
+			background-image: url(/img/icons/ico-search.svg)
+			background-repeat: no-repeat
+			background-position: 12px center
+			padding-left: 30px
+#search
+	width: 0px
+	transition: width 0.3s ease
+	.search-field
+		border-bottom: 2px solid var(--main-color)
+		input
+			padding: 0
+
+.ddown
+	&__languages
+		display: none
+		position: absolute
+		top: 35px
+		background-color: #ffffff
+		li
+			padding: 0 5px
+			&:hover
+				background-color: var(--gray-color)
+		a
+			display: inline-flex
+			align-items: center
+			justify-content: center
+			color: var(--copy-color)
+			font-size: 12px
+			text-transform: uppercase
+			width: 30px
+			text-decoration: none

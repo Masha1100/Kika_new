@@ -1,0 +1,110 @@
+/*==============================================================
+						FOOTER STYLE START
+/*============================================================= */
+.footer
+	&__top
+		border-top: 1px solid var(--gray-color)
+		border-bottom: 1px solid var(--gray-color)
+		display: flex
+		justify-content: space-between
+		min-height: 60px
+		align-items: center
+		padding: 0 35px
+		+lg-block()
+			flex-flow: column wrap
+			justify-content: center
+		+sm(border-top, none)
+		+xs(padding, 0)
+		nav
+			flex-basis: 50%
+			+lg-block()
+				flex-basis: auto
+				width: 80%
+			+sm(display, none)
+			ul
+				display: flex
+				justify-content: space-between
+				li
+					a
+						display: block
+						margin-top: 3px
+						line-height: 70px
+						font-size: 12px
+						font-weight: 500
+						color: var(--main-color)
+						text-transform: uppercase
+						text-decoration: none
+						&:after
+							content: ""
+							display: block
+							height: 3px
+							width: 100%
+					&:hover
+						a:after
+							background-color: var(--orange-color)
+	&__bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 0 35px
+		font-size: 14px
+		color: var(--copy-color)
+		+md-block()
+			flex-flow: column wrap
+			padding: 0
+		&-copy
+			flex-basis: 35%
+			+md-block()
+				order: 2
+				margin-top: 20px
+				text-align: center
+		&-logo
+			max-width: 135px
+			+md(order, 3)
+		&-soc
+			display: flex
+			justify-content: flex-end
+			align-items: baseline
+			flex-basis: 35%
+			+md-block()
+				order: 1
+				width: 100%
+				justify-content: center
+				padding: 20px 0
+				border-bottom: 1px solid var(--gray-color)
+				flex-flow: column wrap
+				align-items: center
+form#subscribe 
+	display: flex
+	flex-basis: 35%
+	justify-content: flex-end
+	font-size: 14px
+	+xxl(flex-basis, 45%)
+	+lg-block()
+		flex-basis: auto
+		align-items: center
+		margin-bottom: 10px
+	+sm-block()
+		flex-flow: column wrap
+		width: 100%
+		align-items: flex-start
+	label.subscribe-field
+		margin-right: 30px
+		margin-top: 3px
+		line-height: 70px
+		+lg(line-height, 1.8)
+	div
+		width: 160px
+		margin: auto 0
+		+sm(width, 100%)
+		input
+			padding: 10px
+			border: 1px solid var(--gray-color)
+			line-height: 1.3
+			font-weight: 300
+			+sm-block()
+				display: block
+				width: 100%
+		&:hover
+			input
+				background-color: var(--btn-hover-bgcolor)

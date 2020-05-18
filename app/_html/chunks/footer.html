@@ -1,0 +1,40 @@
+<footer class="footer">
+	<div class="footer__inner container">
+		<div class="footer__top">
+			<nav>
+				<ul>
+					<li><a href="/front_kika/services">Прайс-лист</a></li>
+					<li><a href="/front_kika/blog">Об услугах</a></li>
+					<li><a href="/front_kika/world">Мир Кiка</a></li>
+					<li><a href="/front_kika/world/collections">Фото</a></li>
+					<li><a href="/front_kika/videos">Видео</a></li>
+					<li><a href="/front_kika/salons">Салоны</a></li>
+				</ul>
+			</nav>
+			<form action="/subscribe" method="get" id="subscribe">
+				<label for="subscribe-inp" class="subscribe-field">
+					Присоединитесь к нашей рассылке
+				</label>
+				<div>
+					<input name="subscribe" id="subscribe-inp" value="" placeholder="E-mail">
+				</div>
+			</form>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-copy">
+				<p>&copy; 2019 "Kika-Style"</p> <p>Салон красоты Kika-Style</p>
+			</div>
+			<div class="footer__bottom-logo">
+				<a href="/front_kika/"><img src="/img/icons/logo2.jpg" alt="kika-style-logo" /></a>
+			</div>
+			<div class="footer__bottom-soc">
+				Мы в социальных сетях:
+				@@include('./social.html')
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdpL_4KVrL8yfhHiKTtqK2R6-ZyaBtrGE&callback=initMap">
+</script>
